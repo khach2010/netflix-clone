@@ -1,8 +1,15 @@
 import React from 'react'
+import { Footer } from './components'
+import { FooterContainer } from './containers/footer'
 import { JumbotronContainer } from './containers/jumbotron'
 
 function App() {
-  return <JumbotronContainer />
+  return (
+    <>
+      <JumbotronContainer />
+      <FooterContainer />
+    </>
+  )
 }
 
 export default App
