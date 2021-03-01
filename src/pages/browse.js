@@ -1,5 +1,10 @@
 import React from 'react'
+import { useContent } from '../hooks'
 
 export default function Browse() {
-  return <p>I am from Browse</p>
+  const { series } = useContent('series')
+  const { films } = useContent('films')
+  console.log(films)
+
+  return <p>ss</p>
 }
